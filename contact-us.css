@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+ 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(221, 33, 33, 0.637);
+ 
+}
+::selection {
+  color: rgba(63, 61, 61, 0.599);
+  background: rgba(220, 220, 220, 0.695);
+}
+::-moz-selection {
+ color: rgba(63, 61, 61, 0.599);
+  background: rgba(220, 220, 220, 0.695);
+}
+#preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(36, 42, 50);
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: 100000000000000;
+}
+
+#preloader > img {
+  width: 20%;
+}
+
+.contact-us--video {
+  z-index: -10;
+
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.logo-name {
+ 
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-family: inherit;
+}
+
+.navbar {
+ 
+
+ 
+  color: rgba(255, 255, 255, 0.459);
+
+  backdrop-filter: blur(12px);
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+ 
+  padding: 0 6rem;
+  background-color: rgba(0, 0, 0, 0.513);
+ 
+  z-index: 100;
+  animation-name: navs;
+  animation-duration: 8s;
+ 
+ 
+ 
+ 
+ 
+}
+@keyframes navs {
+  0% {
+   
+    transform: translateY(-8rem);
+   
+  }
+  25% {
+    transform: translateY(-20rem);
+  }
+
+  50% {
+    transform: translateY(-10rem);
+  }
+  75% {
+    transform: translateY(0rem);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+   
+  }
+}
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 4rem;
+}
+
+.nav-linkers {
+ 
+  color: rgba(245, 237, 237, 0.513);
+  text-decoration: none;
+ 
+  font-family: "Dancing Script", cursive;
+  font-size: 1.7rem;
+  opacity: 0.7;
+  transition-duration: 400ms;
+}
+.nav-linkers:hover {
+  color: #03e9f4;
+ 
+  opacity: 1;
+}
+.contact-linker {
+  color: #03e9f4;
+  opacity: 1;
+}
+.logo {
+  width: 10rem;
+  border-radius: 1rem;
+ 
+ 
+ 
+ 
+  opacity: 0.8;
+ animation-name: logo-anime;
+  animation-delay: 8s;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-duration: 5s;
+ 
+}
+
+@keyframes logo-anime {
+  0% {
+    width: 10rem;
+  }
+  60% {
+    width: 13rem;
+    transform: rotateZ(90deg);
+  }
+}
